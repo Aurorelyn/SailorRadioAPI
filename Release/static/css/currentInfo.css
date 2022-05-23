@@ -1,0 +1,102 @@
+.currentInfo{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.currentInfo img{
+  padding: 0.5em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--hFontColor);
+}
+
+.currentInfo #song,#streamer{
+  color:white;
+  background-color: var(--b2BGC);
+  width: 33%;
+  border-radius: 1.5em;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.currentInfo .info{
+  margin-left: 15px;
+  width: 100%;
+}
+
+.currentInfo #volume{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 30%;
+  justify-self: start;
+  margin: 5px;
+  height: 2px;
+  border-radius: 1em;
+  background-color: rgb(15, 15, 10);
+}
+
+.currentInfo #volume{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 30%;
+  justify-self: start;
+  margin: 5px;
+  height: 2px;
+  border-radius: 1em;
+  background-color: rgb(15, 15, 10);
+}
+
+.currentInfo #volume::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  border-radius: 50%;
+  background: white;
+  cursor: pointer; /* Cursor on hover */
+  transition: all 500ms ease;
+}
+
+.currentInfo #volume::-webkit-slider-thumb:hover {
+    box-shadow: 0px 0px 0px 7px rgba(255,255,255, .2);
+    background-color: white;
+    transition: all 500ms ease;
+}
+
+.currentInfo #volume::-webkit-slider-thumb:active {
+    width: 16px; /* Set a specific slider handle width */
+    height: 16px; /* Slider handle height */
+    box-shadow: none;
+    background-color: white;
+    transition: all 50ms ease;
+}
+
+.currentInfo .songTitle,.streamer{
+  background-color: black;
+  padding: 10px;
+  font-size: 0.75em;
+  font-weight: bold;
+  border-radius: .5em;
+}
+
+.currentInfo .songAuthor{
+  margin-top: 1em;
+  font-size: 0.75em;
+  font-weight: 100;
+  font-size: 0.65em;
+  text-align: left;
+}
+
+.currentInfo .stream{
+  margin-top: 1em;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}

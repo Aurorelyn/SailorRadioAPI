@@ -1,0 +1,8 @@
+.mainContent{
+  background-color: var(--b2BGC);
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  padding-top: 100%;
+}

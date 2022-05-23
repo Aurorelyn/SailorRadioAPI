@@ -1,0 +1,3 @@
+﻿  SailorRadioAPI.cpp
+C:\DEV\vcpkg\installed\x86-windows\include\crow\utility.h(553,67): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  SailorRadioAPI.vcxproj -> C:\Users\kerna\source\repos\SailorRadioAPI\Debug\SailorRadioAPI.exe

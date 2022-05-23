@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SailorRadio</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="../static/js/home.js" defer></script>
+  </head>
+  <body>
+    <div id='header' class='header'>
+      <img src="../static/img/Sailor_Radio/Logo/LOGO.svg" width="69px" style="position:absolute; background-color: black; padding: 5px;">
+      <span class="banner1">
+        <a href="/home">Register</a>
+        <a href="/home">Login</a>
+      </span>
+
+      <span class="banner2">
+        <span class='title'>SailorRadio</span>
+        <a href="/home">Request</a>
+        <a href="/home">Schedule</a>
+        <a href="/home">Contact</a>
+        <a href="/home">More</a><p>⬎</p>
+      </span>
+
+    </div>
+
+    <img style="filter: blur(0px); position:absolute; top:-600px; z-index:-99;" src="https://www.wallpapers13.com/wp-content/uploads/2015/03/Pirate-Ships-Sunset-reflection-Fantasy-Art-pictures-for-your-Desktop-Wallpaper-HD-4000x2250-1920x1080.jpg">
+    <div id='currentInfo' class="currentInfo">
+      <div id='song'>
+        <audio id='audio'>
+          <source src="http://46.101.23.145:8000/radio.mp3">
+        </audio>
+        <img onclick="playAudio();" id="songArt" src=""></img>
+        <div class='info'>
+          <div id="songTitle" class="songTitle"></div>
+          <div class="songAuthor">➤ <span id="songAuthor"></span></div>
+          <input type="range" min="1" max="100" id='volume'>
+        </div>
+
+      </div>
+      <div id='streamer'>
+        <img id="streamerPfP" src="#">
+        <div class='info'>
+          <div id="streamerName" class="streamer">{{ STREAMERNAME }}</div>
+          <div id="streameDesc" class="stream"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainContent">
+      <span class="ads">
+        <span style="margin-right: 20px"></span>Community Ads
+      </span>
+      <span class="recentPlay" id="recentPlayBase">
+        Previously Played
+      </span>
+    </div>
+  </body>
+</html>

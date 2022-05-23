@@ -1,0 +1,77 @@
+@import 'header.css';
+@import 'currentInfo.css';
+
+:root{
+  --hFontColor: #B49C5A;
+  --b1BGC: #000000;
+  --b2BGC: #1a1a1a;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: Verdana;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainContent{
+  background-color: var(--b2BGC);
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-column-end: 4;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+}
+
+.mainContent .ads{
+  display: inline;
+  text-decoration: underline;
+  color:white;
+  padding: 20px;
+  grid-area: 1 / 1 / 1 / 4;
+}
+.mainContent .ads .content{
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 2em;
+  grid-area: 1 / 4 / 1 / 5;
+
+  height: 20em;
+}
+
+.mainContent .recentPlay {
+  text-decoration: underline;
+  color:white;
+  padding: 20px;
+  grid-column: 4;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContent .recentPlay .recentPlaybox{
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+      overflow: hidden;
+}
+
+.mainContent .recentPlay .recentPlaybox .songImage{
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  width: 3.5em;
+  height: 3.5em;
+  display: inline;
+}
+.mainContent .recentPlay .recentPlaybox span{
+  padding: 10px;
+}
+.mainContent .recentPlay .recentPlaybox div{
+  font-size: 0.6em;
+  width: fit-content;
+}

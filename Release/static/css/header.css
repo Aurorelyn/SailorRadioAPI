@@ -1,0 +1,64 @@
+.header{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header .title{
+  margin-left: 79px;
+  padding: 2px;
+  padding-right: 5px;
+  background-color: black;
+  border: 8px solid var(--b2BGC);
+  border-left: 8px solid var(--b1BGC);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  font-size:  1.5em;
+  font-weight: 1000;
+  color: var(--hFontColor);
+  margin-right: auto;
+}
+
+.header a,p{
+  color: white;
+  text-decoration: inherit;
+  margin: 0px;
+  padding: 5px;
+}
+
+.header p{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding:0px;
+  
+}
+
+.header .banner1{
+  padding: 2px;
+  background-color: var(--b1BGC);
+  font-size: 0.8em;
+  display: block;
+  margin: 0px;
+  display: flex;
+
+}
+
+.header .banner1 a:first-of-type{
+    margin-left: auto;
+}
+
+.header .banner2{
+  background-color: var(--b2BGC);
+  font-weight: 600;
+  margin: 0px;
+  display: flex;
+
+}
+
+.header .banner2 a{
+  margin-top: auto;
+  margin-bottom: auto;
+  justify: center;
+  font-size: 0.9em;
+
+}
